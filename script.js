@@ -80,10 +80,10 @@ btnHold.addEventListener('click', function () {
       playing = false;
       diceEl.classList.add('hidden');
       document
-        .querySelector(`.player-${activePlayer}`)
+        .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
       document
-        .querySelector(`.player-${activePlayer}`)
+        .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
     } else {
       switchPlayer();
